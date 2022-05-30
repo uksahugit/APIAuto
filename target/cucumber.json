@@ -1,0 +1,456 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify the list of users are retrieved",
+        "description": "",
+        "id": "testing-demo-users;verify-the-list-of-users-are-retrieved",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1570510400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I try to find the list of users in page 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 40
+                }
+              ],
+              "location": "UserManipulationStepDefs.i_try_to_find_the_number_of_users(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21641100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the operation should be successful",
+            "match": {
+              "location": "ReusableSteps.the_operation_should_be_successful()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 273467599,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "should include the following values",
+            "match": {
+              "location": "ReusableSteps.should_include_the_following_values(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "data.id[0]",
+                  "7"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "data.email[0]",
+                  "michael.lawson@reqres.in"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "data.avatar[0]",
+                  "https://reqres.in/img/faces/7-image.jpg"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Verify a single user retrieved",
+        "description": "",
+        "id": "testing-demo-users;verify-a-single-user-retrieved;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 999665400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I try to find a single user with id 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 36
+                }
+              ],
+              "location": "UserManipulationStepDefs.i_try_to_find_a_single_user(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1240900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the operation should be successful",
+            "match": {
+              "location": "ReusableSteps.the_operation_should_be_successful()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24283500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "should include the following values",
+            "match": {
+              "location": "ReusableSteps.should_include_the_following_values(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "data.id",
+                  "2"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "data.email",
+                  "janet.weaver@reqres.in"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "data.avatar",
+                  "https://reqres.in/img/faces/2-image.jpg"
+                ],
+                "line": 18
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Verify a single user retrieved",
+        "description": "",
+        "id": "testing-demo-users;verify-a-single-user-retrieved;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 142922499,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I try to find a single user with id 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 36
+                }
+              ],
+              "location": "UserManipulationStepDefs.i_try_to_find_a_single_user(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1413200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the operation should be successful",
+            "match": {
+              "location": "ReusableSteps.the_operation_should_be_successful()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29024899,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "should include the following values",
+            "match": {
+              "location": "ReusableSteps.should_include_the_following_values(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "data.id",
+                  "3"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "data.email",
+                  "emma.wong@reqres.in"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "data.avatar",
+                  "https://reqres.in/img/faces/3-image.jpg"
+                ],
+                "line": 18
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Verify the operation fails if it searches the single user with a invalid id",
+        "description": "",
+        "id": "testing-demo-users;verify-the-operation-fails-if-it-searches-the-single-user-with-a-invalid-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 456266000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I try to find a single user with id 2234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2234",
+                  "offset": 36
+                }
+              ],
+              "location": "UserManipulationStepDefs.i_try_to_find_a_single_user(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2419899,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "The status should be not found",
+            "match": {
+              "location": "ReusableSteps.the_status_should_be_not_found()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Verify the operation fails if it searches the single user with a invalid id",
+        "description": "",
+        "id": "testing-demo-users;verify-the-operation-fails-if-it-searches-the-single-user-with-a-invalid-id;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 418525300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I try to find a single user with id 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 36
+                }
+              ],
+              "location": "UserManipulationStepDefs.i_try_to_find_a_single_user(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 691300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "The status should be not found",
+            "match": {
+              "location": "ReusableSteps.the_status_should_be_not_found()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Create a user and verify the user is created",
+        "description": "",
+        "id": "testing-demo-users;create-a-user-and-verify-the-user-is-created",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 780520301,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I try to create a user with the following data",
+            "match": {
+              "location": "UserManipulationStepDefs.i_try_to_create_a_user(String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 36,
+              "value": "{\r\n\"id\": 20090,\r\n\"userId\": 12321345,\r\n\"title\": \"te1s1t\",\r\n\"body\": \"tes11tbody\"\r\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 511200,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "the operation should be successful",
+            "match": {
+              "location": "ReusableSteps.the_operation_should_be_successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 33,
+            "name": "@tag3"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 45,
+            "value": "#And I store the \"id\" of the response as \"ID\""
+          },
+          {
+            "line": 46,
+            "value": "# When I try to find a single user with stored id \"ID\""
+          },
+          {
+            "line": 47,
+            "value": "#Then The \"id\" of the response as string should be equal to the stored \"ID\""
+          }
+        ],
+        "line": 50,
+        "name": "Try to get a service unavailable server and the operation should fail",
+        "description": "",
+        "id": "testing-demo-users;try-to-get-a-service-unavailable-server-and-the-operation-should-fail",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1761661300,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I try to get the data",
+            "match": {
+              "location": "UserManipulationStepDefs.iTryToGetTheData()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 369900,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "the operation should fail because of service unavailable",
+            "match": {
+              "location": "ReusableSteps.the_operation_should_fail_service_unavaileble()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 49,
+            "name": "@tag4"
+          }
+        ]
+      }
+    ],
+    "name": "Testing demo users",
+    "description": "",
+    "id": "testing-demo-users",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/DemoAPIAutomation.feature"
+  }
+]

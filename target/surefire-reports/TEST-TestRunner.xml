@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestRunner" time="7.327" tests="24" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="14"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\uttam.sahu\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="maven.conf" value="C:\Users\uttam.sahu\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Users\uttam.sahu\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\.."/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\uttam.sahu"/>
+    <property name="user.language" value="en"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-14.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="14.0.2+12-46"/>
+    <property name="user.name" value="uttam.sahu"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\UTTAM~1.SAH\AppData\Local\Temp\"/>
+    <property name="java.version" value="14.0.2"/>
+    <property name="user.dir" value="C:\Projects\RestAssured+Cucumber+Azure"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Projects\RestAssured+Cucumber+Azure"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\uttam.sahu\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\uttam.sahu\AppData\Local\Programs\Python\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Users\uttam.sahu\Downloads\instantclient-basic-windows.x64-19.11.0.0.0dbru\instantclient_19_11;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Users\uttam.sahu\Downloads\chromedriver_win32\chromedriver.exe;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk-14.0.2\bin;C:\Users\uttam.sahu\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\uttam.sahu\AppData\Local\Microsoft\WindowsApps;C:\Users\uttam.sahu\Downloads\instantclient-basic-windows.x64-19.11.0.0.0dbru\instantclient_19_11;;C:\Users\uttam.sahu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\uttam.sahu\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="14.0.2+12-46"/>
+    <property name="classworlds.conf" value="C:\Users\uttam.sahu\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="library.jansi.path" value="C:\Users\uttam.sahu\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="java.class.version" value="58.0"/>
+  </properties>
+  <testcase name="When I try to find the list of users in page 2" classname="Scenario: Verify the list of users are retrieved" time="0.001"/>
+  <testcase name="Then the operation should be successful" classname="Scenario: Verify the list of users are retrieved" time="0"/>
+  <testcase name="And should include the following values" classname="Scenario: Verify the list of users are retrieved" time="0"/>
+  <testcase name="Scenario: Verify the list of users are retrieved" classname="Scenario: Verify the list of users are retrieved" time="0"/>
+  <testcase name="When I try to find a single user with id 2" classname="| 2 | janet.weaver@reqres.in | https://reqres.in/img/faces/2-image.jpg |" time="0"/>
+  <testcase name="Then the operation should be successful" classname="| 2 | janet.weaver@reqres.in | https://reqres.in/img/faces/2-image.jpg |" time="0"/>
+  <testcase name="And should include the following values" classname="| 2 | janet.weaver@reqres.in | https://reqres.in/img/faces/2-image.jpg |" time="0"/>
+  <testcase name="| 2 | janet.weaver@reqres.in | https://reqres.in/img/faces/2-image.jpg |" classname="| 2 | janet.weaver@reqres.in | https://reqres.in/img/faces/2-image.jpg |" time="0.001"/>
+  <testcase name="When I try to find a single user with id 3" classname="| 3 | emma.wong@reqres.in | https://reqres.in/img/faces/3-image.jpg |" time="0"/>
+  <testcase name="Then the operation should be successful" classname="| 3 | emma.wong@reqres.in | https://reqres.in/img/faces/3-image.jpg |" time="0"/>
+  <testcase name="And should include the following values" classname="| 3 | emma.wong@reqres.in | https://reqres.in/img/faces/3-image.jpg |" time="0"/>
+  <testcase name="| 3 | emma.wong@reqres.in | https://reqres.in/img/faces/3-image.jpg |" classname="| 3 | emma.wong@reqres.in | https://reqres.in/img/faces/3-image.jpg |" time="0"/>
+  <testcase name="When I try to find a single user with id 2234" classname="| 2234 |" time="0"/>
+  <testcase name="Then The status should be not found" classname="| 2234 |" time="0"/>
+  <testcase name="| 2234 |" classname="| 2234 |" time="0.001"/>
+  <testcase name="When I try to find a single user with id 0" classname="| 0 |" time="0"/>
+  <testcase name="Then The status should be not found" classname="| 0 |" time="0"/>
+  <testcase name="| 0 |" classname="| 0 |" time="0.001"/>
+  <testcase name="When I try to create a user with the following data" classname="Scenario: Create a user and verify the user is created" time="0"/>
+  <testcase name="Then the operation should be successful" classname="Scenario: Create a user and verify the user is created" time="0"/>
+  <testcase name="Scenario: Create a user and verify the user is created" classname="Scenario: Create a user and verify the user is created" time="0"/>
+  <testcase name="When I try to get the data" classname="Scenario: Try to get a service unavailable server and the operation should fail" time="0"/>
+  <testcase name="Then the operation should fail because of service unavailable" classname="Scenario: Try to get a service unavailable server and the operation should fail" time="0"/>
+  <testcase name="Scenario: Try to get a service unavailable server and the operation should fail" classname="Scenario: Try to get a service unavailable server and the operation should fail" time="0.001"/>
+</testsuite>

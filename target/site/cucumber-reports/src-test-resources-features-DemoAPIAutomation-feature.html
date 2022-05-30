@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Feature: Testing demo users </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>DemoAPIAutomation</td>
+                          <td>42</td>
+                        <td>30 May 2022, 13:28</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Feature Report</h2>
+  </div>
+
+
+<div class="container-fluid" id="report-summary">
+  <table class="stats-table">
+    <thead>
+  <tr class="header">
+        <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th id="stats-header-key">Feature</th>
+        <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed"    class="passed">Passed</th>
+    <th id="stats-header-steps-failed"    class="failed">Failed</th>
+    <th id="stats-header-steps-skipped"   class="skipped">Skipped</th>
+    <th id="stats-header-steps-pending"   class="pending">Pending</th>
+    <th id="stats-header-steps-undefined" class="undefined">Undefined</th>
+    <th id="stats-header-steps-missing"   class="missing">Missing</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+  </tr>
+</thead>
+
+        <tr>
+      <td class="tagname"><a id="stats-Testing demo users" href="src-test-resources-features-DemoAPIAutomation-feature.html">Testing demo users</a></td>
+            <td id="stats-number-scenarios-Testing demo users">7</td>
+      <td id="stats-number-scenarios-passed-Testing demo users">7</td>
+      <td id="stats-number-scenarios-failed-Testing demo users">0</td>
+      <td id="stats-number-steps-Testing demo users">17</td>
+      <td id="stats-number-steps-passed-Testing demo users">17</td>
+      <td id="stats-number-steps-failed-Testing demo users"    >0</td>
+      <td id="stats-number-steps-skipped-Testing demo users"   >0</td>
+      <td id="stats-number-steps-pending-Testing demo users"   >0</td>
+      <td id="stats-number-steps-undefined-Testing demo users" >0</td>
+      <td id="stats-number-steps-missing-Testing demo users"   >0</td>
+      <td id="stats-duration-Testing demo users" class="duration-format">06s 485ms</td>
+      <td id="stats-status-Testing demo users" class="passed">Passed</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="container-fluid" id="report-details">
+  <div class="feature-tags"></div>
+  <div class="passed">
+    <div class="feature-line">
+      <span class="feature-keyword">Feature: </span>Testing demo users
+    </div>
+  </div>
+  <div class="feature-description"></div>
+
+      <div class="feature-tags"><a href="tag1.html">@tag1</a></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Verify the list of users are retrieved</span></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I try to find the list of users in page 2</span><span class="step-duration">01s 570ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">the operation should be successful</span><span class="step-duration">021ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">should include the following values</span><span class="step-duration">273ms</span></div>
+      
+              <table class="arguments-table">
+                  <tr>
+                          <td>data.id[0]</td>
+                          <td>7</td>
+                      </tr>
+                  <tr>
+                          <td>data.email[0]</td>
+                          <td>michael.lawson@reqres.in</td>
+                      </tr>
+                  <tr>
+                          <td>data.avatar[0]</td>
+                          <td>https://reqres.in/img/faces/7-image.jpg</td>
+                      </tr>
+                </table>
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Verify a single user retrieved</span></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I try to find a single user with id 2</span><span class="step-duration">999ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">the operation should be successful</span><span class="step-duration">001ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">should include the following values</span><span class="step-duration">024ms</span></div>
+      
+              <table class="arguments-table">
+                  <tr>
+                          <td>data.id</td>
+                          <td>2</td>
+                      </tr>
+                  <tr>
+                          <td>data.email</td>
+                          <td>janet.weaver@reqres.in</td>
+                      </tr>
+                  <tr>
+                          <td>data.avatar</td>
+                          <td>https://reqres.in/img/faces/2-image.jpg</td>
+                      </tr>
+                </table>
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Verify a single user retrieved</span></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I try to find a single user with id 3</span><span class="step-duration">142ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">the operation should be successful</span><span class="step-duration">001ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">should include the following values</span><span class="step-duration">029ms</span></div>
+      
+              <table class="arguments-table">
+                  <tr>
+                          <td>data.id</td>
+                          <td>3</td>
+                      </tr>
+                  <tr>
+                          <td>data.email</td>
+                          <td>emma.wong@reqres.in</td>
+                      </tr>
+                  <tr>
+                          <td>data.avatar</td>
+                          <td>https://reqres.in/img/faces/3-image.jpg</td>
+                      </tr>
+                </table>
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"><a href="tag2.html">@tag2</a></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Verify the operation fails if it searches the single user with a invalid id</span></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I try to find a single user with id 2234</span><span class="step-duration">456ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">The status should be not found</span><span class="step-duration">002ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"><a href="tag2.html">@tag2</a></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Verify the operation fails if it searches the single user with a invalid id</span></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I try to find a single user with id 0</span><span class="step-duration">418ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">The status should be not found</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"><a href="tag3.html">@tag3</a></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Create a user and verify the user is created</span></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I try to create a user with the following data</span><span class="step-duration">780ms</span></div>
+      <div class="passed"><div class="doc-string">{<br/>&quot;id&quot;:&nbsp;20090,<br/>&quot;userId&quot;:&nbsp;12321345,<br/>&quot;title&quot;:&nbsp;&quot;te1s1t&quot;,<br/>&quot;body&quot;:&nbsp;&quot;tes11tbody&quot;<br/>}</div></div>
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">the operation should be successful</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"><a href="tag4.html">@tag4</a></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Try to get a service unavailable server and the operation should fail</span></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">I try to get the data</span><span class="step-duration">01s 761ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">the operation should fail because of service unavailable</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+  </div>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
