@@ -50,6 +50,7 @@ Feature: Testing demo users
   Scenario: Try to get a service unavailable server and the operation should fail
     When I try to get the data
     Then the operation should fail because of service unavailable
+    Then the operation should be successful
     #And the operation should be successful
     #Then the operation should fail because of service unavailable
     #And This is an undefined step defination
