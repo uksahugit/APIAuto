@@ -55,4 +55,10 @@ public class ReusableSteps extends BaseStepDef {
         final Integer stored = (Integer) context.vars.get(key);
         assertThat(responseCheck, is(stored));
     }
+
+    @Then("^the \"([^\"]*)\" of the response should be \"([^\"]*)\"$")
+    public void the_x_of_the_response_should_be_string_y(String path, String check) {
+        String responseCheck = context.response.jsonPath().getString(path);
+        assertThat(responseCheck, is(check));
+    }
 }

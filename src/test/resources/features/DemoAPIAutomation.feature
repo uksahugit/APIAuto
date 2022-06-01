@@ -43,7 +43,7 @@ Feature: Testing demo users
     """
     Then the operation should be successful
     #And I store the "id" of the response as "ID"
-   # When I try to find a single user with stored id "ID"
+    #When I try to find a single user with stored id "ID"
     #Then The "id" of the response as string should be equal to the stored "ID"
 
   @tag4
@@ -51,7 +51,17 @@ Feature: Testing demo users
     When I try to get the data
     Then the operation should fail because of service unavailable
     Then the operation should be successful
-    #And the operation should be successful
-    #Then the operation should fail because of service unavailable
     #And This is an undefined step defination
+
+  @tag5
+  Scenario: Try to login to an API, retrieve a single user and verify the data
+    Given I try to login to the server
+    And the "token" of the response should be "QpwL5tke4Pnpja7X4"
+    When I try to find a single user with id 2
+    Then the operation should be successful
+    And should include the following values
+      | data.id     | 2                                       |
+      | data.email  | janet.weaver@reqres.in                  |
+      | data.avatar | https://reqres.in/img/faces/2-image.jpg |
+
 

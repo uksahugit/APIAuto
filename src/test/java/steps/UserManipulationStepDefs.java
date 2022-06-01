@@ -1,5 +1,6 @@
 package steps;
 
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import utils.ScenarioContext;
 import steps.BaseStepDef;
@@ -40,5 +41,11 @@ public class UserManipulationStepDefs extends BaseStepDef {
     @When("^I try to get the data$")
     public void iTryToGetTheData() {
         context.response = getData();
+    }
+
+    @Given("^I try to login to the server$")
+    public void iTryToLoginToTheServer() {
+        context.response = login();
+        context.response.jsonPath().prettyPrint();
     }
 }

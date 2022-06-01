@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestRunner" time="7.327" tests="24" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestRunner" time="3.234" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -Denv=QA -Dcucumber.options=--tags @tag5"/>
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="C:\Users\uttam.sahu\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\.."/>
     <property name="sun.cpu.endian" value="little"/>
@@ -42,13 +42,15 @@
     <property name="file.encoding" value="Cp1252"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="cucumber.options" value="--tags @tag5"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\UTTAM~1.SAH\AppData\Local\Temp\"/>
     <property name="java.version" value="14.0.2"/>
-    <property name="user.dir" value="C:\Projects\RestAssured+Cucumber+Azure"/>
+    <property name="user.dir" value="C:\Projects\APIAutoDemo\APIAuto"/>
     <property name="os.arch" value="amd64"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Projects\RestAssured+Cucumber+Azure"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Projects\APIAutoDemo\APIAuto"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="env" value="QA"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\uttam.sahu\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\uttam.sahu\AppData\Local\Programs\Python\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Users\uttam.sahu\Downloads\instantclient-basic-windows.x64-19.11.0.0.0dbru\instantclient_19_11;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Users\uttam.sahu\Downloads\chromedriver_win32\chromedriver.exe;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk-14.0.2\bin;C:\Users\uttam.sahu\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\uttam.sahu\AppData\Local\Microsoft\WindowsApps;C:\Users\uttam.sahu\Downloads\instantclient-basic-windows.x64-19.11.0.0.0dbru\instantclient_19_11;;C:\Users\uttam.sahu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\uttam.sahu\AppData\Roaming\npm;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
@@ -59,28 +61,10 @@
     <property name="library.jansi.path" value="C:\Users\uttam.sahu\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="When I try to find the list of users in page 2" classname="Scenario: Verify the list of users are retrieved" time="0.001"/>
-  <testcase name="Then the operation should be successful" classname="Scenario: Verify the list of users are retrieved" time="0"/>
-  <testcase name="And should include the following values" classname="Scenario: Verify the list of users are retrieved" time="0"/>
-  <testcase name="Scenario: Verify the list of users are retrieved" classname="Scenario: Verify the list of users are retrieved" time="0"/>
-  <testcase name="When I try to find a single user with id 2" classname="| 2 | janet.weaver@reqres.in | https://reqres.in/img/faces/2-image.jpg |" time="0"/>
-  <testcase name="Then the operation should be successful" classname="| 2 | janet.weaver@reqres.in | https://reqres.in/img/faces/2-image.jpg |" time="0"/>
-  <testcase name="And should include the following values" classname="| 2 | janet.weaver@reqres.in | https://reqres.in/img/faces/2-image.jpg |" time="0"/>
-  <testcase name="| 2 | janet.weaver@reqres.in | https://reqres.in/img/faces/2-image.jpg |" classname="| 2 | janet.weaver@reqres.in | https://reqres.in/img/faces/2-image.jpg |" time="0.001"/>
-  <testcase name="When I try to find a single user with id 3" classname="| 3 | emma.wong@reqres.in | https://reqres.in/img/faces/3-image.jpg |" time="0"/>
-  <testcase name="Then the operation should be successful" classname="| 3 | emma.wong@reqres.in | https://reqres.in/img/faces/3-image.jpg |" time="0"/>
-  <testcase name="And should include the following values" classname="| 3 | emma.wong@reqres.in | https://reqres.in/img/faces/3-image.jpg |" time="0"/>
-  <testcase name="| 3 | emma.wong@reqres.in | https://reqres.in/img/faces/3-image.jpg |" classname="| 3 | emma.wong@reqres.in | https://reqres.in/img/faces/3-image.jpg |" time="0"/>
-  <testcase name="When I try to find a single user with id 2234" classname="| 2234 |" time="0"/>
-  <testcase name="Then The status should be not found" classname="| 2234 |" time="0"/>
-  <testcase name="| 2234 |" classname="| 2234 |" time="0.001"/>
-  <testcase name="When I try to find a single user with id 0" classname="| 0 |" time="0"/>
-  <testcase name="Then The status should be not found" classname="| 0 |" time="0"/>
-  <testcase name="| 0 |" classname="| 0 |" time="0.001"/>
-  <testcase name="When I try to create a user with the following data" classname="Scenario: Create a user and verify the user is created" time="0"/>
-  <testcase name="Then the operation should be successful" classname="Scenario: Create a user and verify the user is created" time="0"/>
-  <testcase name="Scenario: Create a user and verify the user is created" classname="Scenario: Create a user and verify the user is created" time="0"/>
-  <testcase name="When I try to get the data" classname="Scenario: Try to get a service unavailable server and the operation should fail" time="0"/>
-  <testcase name="Then the operation should fail because of service unavailable" classname="Scenario: Try to get a service unavailable server and the operation should fail" time="0"/>
-  <testcase name="Scenario: Try to get a service unavailable server and the operation should fail" classname="Scenario: Try to get a service unavailable server and the operation should fail" time="0.001"/>
+  <testcase name="Given I try to login to the server" classname="Scenario: Try to login to an API, retrieve a single user and verify the data" time="0"/>
+  <testcase name="And the &quot;token&quot; of the response should be &quot;QpwL5tke4Pnpja7X4&quot;" classname="Scenario: Try to login to an API, retrieve a single user and verify the data" time="0"/>
+  <testcase name="When I try to find a single user with id 2" classname="Scenario: Try to login to an API, retrieve a single user and verify the data" time="0"/>
+  <testcase name="Then the operation should be successful" classname="Scenario: Try to login to an API, retrieve a single user and verify the data" time="0"/>
+  <testcase name="And should include the following values" classname="Scenario: Try to login to an API, retrieve a single user and verify the data" time="0"/>
+  <testcase name="Scenario: Try to login to an API, retrieve a single user and verify the data" classname="Scenario: Try to login to an API, retrieve a single user and verify the data" time="0"/>
 </testsuite>

@@ -50,7 +50,20 @@ Feature: Testing demo users
   Scenario: Try to get a service unavailable server and the operation should fail
     When I try to get the data
     Then the operation should fail because of service unavailable
+    Then the operation should be successful
     #And the operation should be successful
     #Then the operation should fail because of service unavailable
     #And This is an undefined step defination
+
+  @tag5
+  Scenario: Try to login to an API, retrieve a single user and verify the data
+    Given I try to login to the server
+    And the "token" of the response should be "QpwL5tke4Pnpja7X4"
+    When I try to find a single user with id 2
+    Then the operation should be successful
+    And should include the following values
+      | data.id     | 2                                       |
+      | data.email  | janet.weaver@reqres.in                  |
+      | data.avatar | https://reqres.in/img/faces/2-image.jpg |
+
 

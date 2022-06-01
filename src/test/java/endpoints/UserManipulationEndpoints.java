@@ -3,6 +3,9 @@ package endpoints;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 
 public class UserManipulationEndpoints {
@@ -36,5 +39,14 @@ public class UserManipulationEndpoints {
 
     public static Response getData() {
         return given().when().get("https://httpstat.us/503");
+    }
+
+    public static Response login() {
+        Map<String,String> authPayload = new HashMap<String,String>();
+        authPayload.put("email", "eve.holt@reqres.in");
+        authPayload.put("password", "cityslicka");
+        RequestSpecification req = given().contentType("application/json");
+        req.body(authPayload);
+        return req.when().post(dummyTestBaseURI+ "/api/login");
     }
 }
